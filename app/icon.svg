@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="MD Shariful Islam monogram">
+  <rect width="256" height="256" rx="64" fill="#020b12"/>
+  <circle cx="128" cy="128" r="92" fill="none" stroke="#163f5e" stroke-width="10"/>
+  <circle cx="128" cy="128" r="74" fill="none" stroke="#1a4f73" stroke-width="6" opacity="0.95"/>
+  <path d="M165 57c-14-13-34-20-55-20-33 0-61 20-70 49-9 27 5 54 29 68 18 11 41 15 63 14l32-2c18-2 31 8 31 23 0 17-16 27-39 29-24 2-46-4-63-18" fill="none" stroke="#f3efe9" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M90 201c13 9 30 14 47 14 31 0 57-15 70-42 7-15 9-33 4-50" fill="none" stroke="#f3efe9" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

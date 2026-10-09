@@ -21,6 +21,119 @@
 			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && yes | npx create-next-app@latest . --ts --tailwind --eslint --app --use-npm --import-alias \"@/*\" --no-src-dir --yes'",
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Install portfolio UI dependencies",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm install framer-motion lucide-react'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Create portfolio structure directories",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && mkdir -p app/components/layout app/components/sections app/components/ui data public'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Create root component directories",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && mkdir -p components/layout components/sections components/ui data public'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build portfolio site",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build portfolio site after fixes",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify portfolio build",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final production build check",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Lint portfolio app",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run lint'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run final lint validation",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run lint'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Start portfolio dev server",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run dev -- --hostname 0.0.0.0 --port 3000'",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final production validation",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Add hero portrait image to public assets",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && mkdir -p public/images && cp \"/c/Users/MD Shariful Islam/AppData/Roaming/Code/agentSessionData/ef613e72-c6fe-44a2-8b87-99a0eec30f37/attachments/02593dd2-56f6-4966-8d61-791ca3beda72/Pasted Image.png\" \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio/public/images/hero-portrait.png\" && ls -l public/images'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate hero image build",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify project card image build",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npm run build'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Save project reference images",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && mkdir -p public/images/projects && cp \"/c/Users/MD Shariful Islam/AppData/Roaming/Code/agentSessionData/ef613e72-c6fe-44a2-8b87-99a0eec30f37/attachments/d9890aa0-4a1c-40f1-911a-bcada64ddb16/Pasted Image.png\" \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio/public/images/projects/backbuilder.png\" && cp \"/c/Users/MD Shariful Islam/AppData/Roaming/Code/agentSessionData/ef613e72-c6fe-44a2-8b87-99a0eec30f37/attachments/f1c9b8e8-dbf5-4a74-9ef3-d41eb9106e8b/Pasted Image 2.png\" \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio/public/images/projects/jobarman.png\" && cp \"/c/Users/MD Shariful Islam/AppData/Roaming/Code/agentSessionData/ef613e72-c6fe-44a2-8b87-99a0eec30f37/attachments/ebd5264f-f627-438d-a226-7b5342561ee3/Pasted Image 3.png\" \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio/public/images/projects/sendit.png\" && cp \"/c/Users/MD Shariful Islam/AppData/Roaming/Code/agentSessionData/ef613e72-c6fe-44a2-8b87-99a0eec30f37/attachments/b8309bb0-fefc-4e9c-b275-a6ec78c4be88/Pasted Image 4.png\" \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio/public/images/projects/nestjs-template.png\" && ls -l public/images/projects'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build portfolio",
+			"type": "shell",
+			"command": "npm run build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
 		}
 	]
 }
