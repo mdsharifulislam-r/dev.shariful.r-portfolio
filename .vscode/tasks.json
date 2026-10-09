@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Initialize Next.js portfolio app",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && npx create-next-app@latest . --ts --tailwind --eslint --app --use-npm --import-alias \"@/*\" --no-src-dir --yes'",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check shell environment",
+			"type": "shell",
+			"command": "pwd && ls -la && ls -la /c/Users/MD\\ Shariful\\ Islam/Documents/postman-collections/personal/portfolio && ls -la /mnt/c/Users/MD\\ Shariful\\ Islam/Documents/postman-collections/personal/portfolio",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Initialize Next.js portfolio app auto-accept",
+			"type": "shell",
+			"command": "bash -lc 'cd \"/c/Users/MD Shariful Islam/Documents/postman-collections/personal/portfolio/dream-it-portfolio\" && yes | npx create-next-app@latest . --ts --tailwind --eslint --app --use-npm --import-alias \"@/*\" --no-src-dir --yes'",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
