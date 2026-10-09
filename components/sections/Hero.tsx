@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { portfolio } from "@/data/portfolio";
@@ -33,6 +33,15 @@ export function Hero() {
               {portfolio.hero.intro}
             </p>
           </div>
+
+          <a
+            href="/resume.pdf"
+            download="MD-Shariful-Islam-Resume.pdf"
+            className="mt-7 inline-flex items-center gap-2 rounded-full bg-[var(--foreground)] px-5 py-3 text-sm font-medium text-[var(--background)] transition-transform duration-200 hover:-translate-y-0.5"
+          >
+            <Download size={16} />
+            Download resume
+          </a>
 
           <div className="mt-12 flex items-center gap-3 text-sm text-[var(--muted)]">
             <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--panel)] text-[var(--foreground)]">

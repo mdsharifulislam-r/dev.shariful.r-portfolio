@@ -168,6 +168,16 @@
 			],
 			"isBackground": false,
 			"problemMatcher": []
+		},
+		{
+			"label": "Download resume PDF",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				".download-resume.cjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
