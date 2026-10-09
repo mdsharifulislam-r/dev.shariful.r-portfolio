@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { portfolio } from "@/data/portfolio";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -23,27 +25,15 @@ export function About() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--panel)] p-6 shadow-[0_20px_44px_rgba(17,24,39,0.07)]">
-          <div className="rounded-[1.5rem] border border-[var(--border)] bg-[linear-gradient(135deg,#fff,#f5ece7)] p-5">
-            <div className="grid gap-4" aria-label="System architecture illustration">
-              <div className="flex items-center justify-between rounded-2xl border border-[var(--border)] bg-white/70 px-4 py-3 text-sm text-[var(--muted)]">
-                <span>Product layer</span>
-                <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
-              </div>
-              <div className="flex items-center justify-center gap-4">
-                <div className="rounded-2xl border border-[var(--border)] bg-white/80 px-4 py-3 text-sm text-[var(--muted)]">API</div>
-                <div className="h-px flex-1 bg-[var(--border)]" />
-                <div className="rounded-2xl border border-[var(--border)] bg-white/80 px-4 py-3 text-sm text-[var(--muted)]">Database</div>
-              </div>
-              <div className="grid grid-cols-3 gap-3 text-center text-xs uppercase tracking-[0.18em] text-[var(--muted)]">
-                <div className="rounded-2xl border border-[var(--border)] bg-white/80 px-3 py-4">Auth</div>
-                <div className="rounded-2xl border border-[var(--border)] bg-white/80 px-3 py-4">Workers</div>
-                <div className="rounded-2xl border border-[var(--border)] bg-white/80 px-3 py-4">Deploy</div>
-              </div>
-              <div className="rounded-2xl border border-[var(--border)] bg-[rgba(217,109,86,0.08)] px-4 py-3 text-sm text-[var(--foreground)]">
-                Observability, retries, and service health remain part of the design.
-              </div>
-            </div>
+        <div className="group relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--panel)] p-2 shadow-[0_20px_44px_rgba(17,24,39,0.07)]">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
+            <Image
+              src="/images/about-workspace.png"
+              alt="Developer working at a laptop"
+              fill
+              sizes="(max-width: 1024px) 100vw, 45vw"
+              className="object-cover grayscale-[0.75] contrast-[1.08] transition-transform duration-700 ease-out group-hover:scale-105"
+            />
           </div>
         </div>
       </div>

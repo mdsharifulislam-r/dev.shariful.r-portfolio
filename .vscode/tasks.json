@@ -134,6 +134,40 @@
 			"isBackground": false,
 			"problemMatcher": [],
 			"group": "build"
+		},
+		{
+			"label": "Copy About image",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"-e",
+				"require('node:fs').copyFileSync(process.argv[1], process.argv[2])",
+				"C:\\Users\\MD Shariful Islam\\AppData\\Roaming\\Code\\agentSessionData\\ef613e72-c6fe-44a2-8b87-99a0eec30f37\\attachments\\8ec43237-0949-43cb-83df-907bbbc61f3d\\Pasted Image.png",
+				"C:\\Users\\MD Shariful Islam\\Documents\\postman-collections\\personal\\portfolio\\dream-it-portfolio\\public\\images\\about-workspace.png"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check About image",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"-e",
+				"const fs=require('node:fs'); const p='C:\\\\Users\\\\MD Shariful Islam\\\\Documents\\\\postman-collections\\\\personal\\\\portfolio\\\\dream-it-portfolio\\\\public\\\\images\\\\about-workspace.png'; console.log(fs.existsSync(p) ? fs.statSync(p).size : 'missing')"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Copy About image asset",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				".copy-about-image.cjs"
+			],
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
